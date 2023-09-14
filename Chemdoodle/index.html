@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>Compound portal</title>
+    <link rel="icon" href="static/favicon.ico" />
+  <link rel="stylesheet" href="static/ChemDoodleWeb-9.5.0/install/ChemDoodleWeb.css"/>
+  <link rel="stylesheet" href="static/ChemDoodleWeb-9.5.0/install/uis/jquery-ui-1.11.4.css"/>
+  <link rel="stylesheet" href="static/format.css"/>
+
+  <script src="static/ChemDoodleWeb-9.5.0/install/ChemDoodleWeb.js"></script>
+  <script src="static/ChemDoodleWeb-9.5.0/install/uis/ChemDoodleWeb-uis.js"></script>
+  <script src="static/get_url_queries.js"></script>
+  <script src="static/post_json.js"></script>
+<body>
+  <script>
+    ChemDoodle.ELEMENT['H'].jmolColor = 'black';
+    ChemDoodle.ELEMENT['S'].jmolColor = '#B9A130';
+    let sketcher = new ChemDoodle.SketcherCanvas('sketcher', 600, 480,{useServices:false, oneMolecule:true});
+    sketcher.styles.atoms_displayTerminalCarbonLabels_2D = true;
+    sketcher.styles.atoms_useJMOLColors = true;
+    sketcher.styles.bonds_clearOverlaps_2D = true;
+    sketcher.styles.bonds_overlapClearWidth_2D = 2;
+    sketcher.repaint();
+    let caffeineMolFile ="{molblock}";
+    let caffeine = ChemDoodle.readMOL(caffeineMolFile);
+    sketcher.loadMolecule(caffeine);
+    function alertMolecule(mol){
+      let message = 'This molecule contains '+mol.atoms.length+' atoms and '+mol.bonds.length+' bonds.';
+      alert(message);
+    }
+    function OnButtonClick() {
+      let mol = sketcher.getMolecule();
+      let molFile = ChemDoodle.writeMOL(mol);
+      let queries = getUrlQueries()
+      sendJsonData("{address}", molFile, queries["hash"])
+      setTimeout(window.close, 800);
+    }
+  </script>
+  <br><a class="btn-gradient-3d-simple" onclick="OnButtonClick();">OK</a>
+</body>
+</html>
