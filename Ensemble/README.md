@@ -9,10 +9,10 @@ python train_ensemble.py --df training_data_file_path
 
 ## Architecture
 #### Inputs
-<img src="Image/Inputs.png" width=500>
+<img src="Image/Inputs.png" width=640>
 
 #### Encoder
-<img src="Image/Encoder.png" width=500>
+<img src="Image/Encoder.png" width=640>
 
 #### Ensemble
-<img src="Image/Ensemble.png" width=350>
+<img src="Image/Ensemble.png" width=480>
