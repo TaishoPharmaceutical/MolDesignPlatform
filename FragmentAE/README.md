@@ -24,7 +24,7 @@ fragment_smiles = get_fragments(source_smiles)
 
 
 ### Encoder
-<img src="https://github.com/TaishoPharmaceutical/MolDesignPlatform/blob/main/Ensemble/Image/Encoder.png" width=640>
+<img src="https://github.com/TaishoPharmaceutical/MolDesignPlatform/blob/main/Ensemble/Image/Encoder.png" width=800>
 
 
 ### FragmentAE
