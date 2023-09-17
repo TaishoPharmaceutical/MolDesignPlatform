@@ -28,7 +28,7 @@ pred = ensemble_model.predict(smiles)  #smiles : a list of SMILES
 
 
 ### Encoder
-<img src="Image/Encoder.png" width=800>
+<img src="Image/Encoder.png" width=880>
 
 
 ### Ensemble
