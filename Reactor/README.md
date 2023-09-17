@@ -23,12 +23,12 @@ python ReactorAPI
 
 ## JSON file setting for POST-HTTP
 {  
-&emsp;smiles: SMILES  
-&emsp;reaction: "condensation-with-amine", "condensation-with-carboxylic", "suzuki-with-boron",  
-&emsp;"suzuki-with-arylhalide", "reductive-amination-with-amine", "reductive-amination-with-aldehyde-or-ketone",  
-&emsp;"buchwald-amination-with-amine" or "buchwald-amination-with-arylhalide"  
-&emsp;MolWt_min: minimum mol weight (if needed)  
-&emsp;MolWt_max: maximum mol weight (if needed)  
-&emsp;ArNum_min: minimum number of aromatic ring (if needed)  
-&emsp;ArNum_max: maximum number of aromatic ring (if needed)  
+&emsp;&emsp;smiles: SMILES  
+&emsp;&emsp;reaction: "condensation-with-amine", "condensation-with-carboxylic", "suzuki-with-boron",  
+&emsp;&emsp;&emsp;&emsp;"suzuki-with-arylhalide", "reductive-amination-with-amine", "reductive-amination-with-aldehyde-or-ketone",  
+&emsp;&emsp;&emsp;&emsp;"buchwald-amination-with-amine" or "buchwald-amination-with-arylhalide"  
+&emsp;&emsp;MolWt_min: minimum mol weight (if needed)  
+&emsp;&emsp;MolWt_max: maximum mol weight (if needed)  
+&emsp;&emsp;ArNum_min: minimum number of aromatic ring (if needed)  
+&emsp;&emsp;ArNum_max: maximum number of aromatic ring (if needed)  
 }
