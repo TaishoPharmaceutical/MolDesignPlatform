@@ -1,4 +1,4 @@
-# FragmentAE
+# FragmentAE : Side chain generation using transformer-based models
 
 *Chiaki Nakamori* & *Tore Eriksson*
 
