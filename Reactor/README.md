@@ -23,7 +23,7 @@ python ReactorAPI
 
 ## JSON file setting for POST-HTTP
 { <br>
-<pre>&#009;</pre>smiles: SMILES<br>
+&#009;smiles: SMILES<br>
 <pre>&#009;</pre>reaction: "condensation-with-amine", "condensation-with-carboxylic", "suzuki-with-boron", <br>
 <pre>&#009;</pre>"suzuki-with-arylhalide", "reductive-amination-with-amine", "reductive-amination-with-aldehyde-or-ketone", <br>
 <pre>&#009;</pre>"buchwald-amination-with-amine" or "buchwald-amination-with-arylhalide"<br>
