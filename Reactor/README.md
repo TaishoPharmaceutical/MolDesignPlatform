@@ -22,7 +22,7 @@ python ReactorAPI
 ```
 
 ## JSON file setting for POST-HTTP
-{
+{ <br>
   smiles: SMILES
   reaction: "condensation-with-amine", "condensation-with-carboxylic", "suzuki-with-boron", "suzuki-with-arylhalide", "reductive-amination-with-amine", "reductive-amination-with-aldehyde-or-ketone", "buchwald-amination-with-amine" or "buchwald-amination-with-arylhalide"
   MolWt_min: minimum mol weight (if needed)
