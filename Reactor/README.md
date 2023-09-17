@@ -16,7 +16,7 @@
 ```
 python make_reactants_table.py --df example.csv
 ```
-Change host and port in ReactorAPI and run the following code.
+Change host and port in ReactorAPI.py and run the following code.
 ```
 python ReactorAPI
 ```
