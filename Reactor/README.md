@@ -25,8 +25,8 @@ python ReactorAPI
 {  
 &emsp;&emsp;smiles: SMILES  
 &emsp;&emsp;reaction: "condensation-with-amine", "condensation-with-carboxylic", "suzuki-with-boron",  
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"suzuki-with-arylhalide", "reductive-amination-with-amine", "reductive-amination-with-aldehyde-or-ketone",  
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"buchwald-amination-with-amine" or "buchwald-amination-with-arylhalide"  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"suzuki-with-arylhalide", "reductive-amination-with-amine", "reductive-amination-with-aldehyde-or-ketone",  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"buchwald-amination-with-amine" or "buchwald-amination-with-arylhalide"  
 &emsp;&emsp;MolWt_min: minimum mol weight (if needed)  
 &emsp;&emsp;MolWt_max: maximum mol weight (if needed)  
 &emsp;&emsp;ArNum_min: minimum number of aromatic ring (if needed)  
