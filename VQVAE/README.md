@@ -18,10 +18,10 @@ mols, indices = chemgen.input_smiles_base_sampling(smiles, n = 200, e = 0.32)
 ```
 
 ## Architecture
-### Training
+### 1) Training
 <img src="VQVAE_Image/GraphConv.png" width=800>
 <img src="VQVAE_Image/Vector-Quantized.png" width=720>
 <img src="VQVAE_Image/Reconstruct.png" width=800>
 
-### Generation
+### 2) Generation
 <img src="VQVAE_Image/Sampling.png" width=400>
