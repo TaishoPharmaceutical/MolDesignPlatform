@@ -2,7 +2,7 @@
 
 *Chiaki Nakamori* & *Tore Eriksson*
 
-This model converts a circular structure into one token to simplify the complex graph of a compound and make it easier to learn for AI. 
+This model converts a ring (aromatic ring or aliphatic ring) into one token to simplify the complex graph of a compound and make it easier to learn for AI. 
 
 ## Training
 ```
