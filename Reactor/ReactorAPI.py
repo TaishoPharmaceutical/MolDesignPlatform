@@ -55,10 +55,10 @@ def react():
         min_ar=None
         max_ar=None
 
-    max_wt = 65535 if max_wt is None else max_wt
-    max_ar = 65535 if max_ar is None else max_ar
-    min_wt = -1 if min_wt is None else min_wt
-    min_ar = -1 if min_ar is None else min_ar
+    max_wt = 65535 if max_wt is None else float(max_wt)
+    max_ar = 65535 if max_ar is None else int(max_ar)
+    min_wt = -1 if min_wt is None else float(min_wt)
+    min_ar = -1 if min_ar is None else int(min_ar)
 
     if react == "condensation-with-amine":
         reactants = amines
