@@ -177,7 +177,7 @@ class EsembleModel():
 
 
 
-def get_esemble_model(ggt_path, data_path, reg_tasks,
+def get_ensemble_model(ggt_path, data_path, reg_tasks,
                       class_tasks, ggt_max_len=MAX_LEN):
 
     """

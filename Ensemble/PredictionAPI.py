@@ -19,7 +19,7 @@ import pickle
 from time import time
 import os
 
-from EnsembleModel import get_esemble_model
+from EnsembleModel import get_ensemble_model
 
 
 def predict_models(smiles, models, reg_tasks, cls_tasks):
@@ -95,7 +95,7 @@ def get_models(path, model_ver=None):
         d_model=info[2]
         dff = info[3]
 
-    models = get_esemble_model(model_path[1], data_path, reg_tasks=reg_tasks, class_tasks=cls_tasks)
+    models = get_ensemble_model(model_path[1], data_path, reg_tasks=reg_tasks, class_tasks=cls_tasks)
 
     return models, reg_tasks, cls_tasks
 

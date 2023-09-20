@@ -1,7 +1,7 @@
 import sys
 sys.path.append("../../")
 
-from EnsembleModel import get_esemble_model, result_name, make_result_tables
+from EnsembleModel import get_ensemble_model, result_name, make_result_tables
 from GTs.train import train_model, d_model, dff
 from GTs.Utils.DataUtils import MAX_LEN
 from GTs.train import sep_train_and_test_data
@@ -22,11 +22,11 @@ def predict_df(pred_df, ggt_path, data_path, reg_tasks,
     """
     data_path : The data is needed for converting z_score to original value
     """
-    esemble_model = get_esemble_model(ggt_path, data_path,
+    ensemble_model = get_ensemble_model(ggt_path, data_path,
                                       reg_tasks, class_tasks, ggt_max_len)
 
     smiles = list(pred_df["SMILES"])
-    predictions = esemble_model.predict(smiles, sub_pred)
+    predictions = ensemble_model.predict(smiles, sub_pred)
 
     tasks = reg_tasks + class_tasks
 
