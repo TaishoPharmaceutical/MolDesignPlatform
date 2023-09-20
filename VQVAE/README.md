@@ -1,8 +1,8 @@
-# VQVAE-Chem : Graph-based molecular generative model
+# VQVAE-Chem: Graph-based molecular generative model
 
 *Chiaki Nakamori* & *Tore Eriksson*
 
-This model converts a ring (aromatic ring or aliphatic ring) into one token to simplify the complex graph of a compound and make it easier to learn for AI. 
+This model converts each ring (aromatic ring or aliphatic ring) into a specific token to simplify the complex graph of a compound and make it easier to train the AI model. 
 
 ## Training
 ```
