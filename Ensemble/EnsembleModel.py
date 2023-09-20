@@ -33,7 +33,7 @@ def GetMolsWeightMapImages(mols, weights):
     return images
 
 
-class EsembleModel():
+class EnsembleModel():
     def __init__(self, ggt_models, data_frame, reg_tasks, ggt_max_len=MAX_LEN):
         self.ggt = ggt_models
         self.ggt_max_len=ggt_max_len
@@ -196,7 +196,7 @@ def get_ensemble_model(ggt_path, data_path, reg_tasks,
         transformer[i].load_weights(ggt_path[i])
 
     df = pd.read_csv(data_path)
-    esemble_model = EsembleModel(transformer, df, reg_tasks)
+    esemble_model = EnsembleModel(transformer, df, reg_tasks)
 
     return esemble_model
 
