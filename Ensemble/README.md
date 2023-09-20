@@ -1,4 +1,4 @@
-# Gated Graph Transformer Ensemble Model : Modified Transformer based Property Prediction Model for Chemical Structures
+# Gated Graph Transformer Ensemble Model: Modified Transformer based property prediction model for chemical structures
 
 *Chiaki Nakamori* & *Tore Eriksson*
 
@@ -8,8 +8,8 @@ python train_ensemble.py --df training_data --save save_weights_folder --log sav
 ```
 
 ## Prediction
-The Python code for prediciton is not prepared now.
-To wirte python code like the following is needed.
+
+Standalone python code for property predicion is not provided at the moment. You have to write your own prediction code according to the following example.
 
 ```
 from EnsembleModel import get_esemble_model
@@ -23,6 +23,7 @@ pred = ensemble_model.predict(smiles)  #smiles : a list of SMILES
 ```
 
 ## Architecture
+
 ### Inputs
 <img src="Image/Inputs.png" width=720>
 
