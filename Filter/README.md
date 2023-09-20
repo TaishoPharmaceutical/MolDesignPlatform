@@ -2,4 +2,4 @@
 
 *Chiaki Nakamori* & *Tore Eriksson*
 
-This filter is the rule-based expert system. Rules are written in filter.csv file. Currently, many useless structures pass through the filter. To improve this system, more SMARTS rules need to be added in filter.csv file.
+This filter is a rule-based expert system. Individual SMARTS-based rules are described in the file `filter.csv`. As the provided file only implements a limited set of rules, it is recommended that you add your own rules to achieve improved filtering of unwanted structures.
