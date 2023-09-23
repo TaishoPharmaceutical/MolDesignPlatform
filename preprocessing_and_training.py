@@ -43,11 +43,11 @@ def make_reactants_list():
     python = config["python"]
     prepro = os.path.join(root_path, "Reactor/make_reactants_table.py")
 
-    cmd = " ".join([
-        python, prepro,
+    sp = subprocess.Popen([
+        python,
+        prepro,
         "--df", config["Reactor_data"],
     ])
-    sp = subprocess.Popen(cmd)
     sp.wait()
 
 
@@ -56,8 +56,9 @@ def train_Ensemble():
     python = config["python"]
     train_path = os.path.join(root_path, "Ensemble/train_ensemble.py")
 
-    cmd = " ".join([
-        python, train_path,
+    sp = subprocess.Popen([
+        python,
+        train_path,
         "--df", config["Ensemble_train"]["data_path"],
         "--save", os.path.join(config["Ensemble_train"]["save_path"],str(time.strftime("%Y%m%d"))),
         "--gpu", config["Ensemble_train"]["use_gpu"],
@@ -65,7 +66,6 @@ def train_Ensemble():
         "--batch", config["Ensemble_train"]["batch_size"],
         "--epoch", config["Ensemble_train"]["epoch"],
     ])
-    sp = subprocess.Popen(cmd)
     sp.wait()
 
 
@@ -74,16 +74,15 @@ def train_FragmentAE():
     python = config["python"]
     train_path = os.path.join(root_path, "FragmentAE/train_FragmentAE.py")
 
-    cmd = " ".join([
-        python, train_path,
+    sp = subprocess.Popen([
+        python,
+        train_path,
         "--df", config["FragmentAE_train"]["data_path"],
         "--save", config["FragmentAE_train"]["save_path"],
         "--gpu", config["FragmentAE_train"]["use_gpu"],
         "--batch", config["FragmentAE_train"]["batch_size"],
         "--epoch", config["FragmentAE_train"]["epoch"],
     ])
-
-    sp = subprocess.Popen(cmd)
     sp.wait()
 
 
@@ -92,8 +91,9 @@ def train_VQVAE():
     python = config["python"]
     train_path = os.path.join(root_path, "VQVAE/train_VQVAE.py")
 
-    cmd = " ".join([
-        python, train_path,
+    sp = subprocess.Popen([
+        python,
+        train_path,
         "--df", config["VQVAE_train"]["data_path"],
         "--save", config["VQVAE_train"]["save_path"],
         "--gpu", config["VQVAE_train"]["use_gpu"],
@@ -101,7 +101,6 @@ def train_VQVAE():
         "--VQTrainEpoch", config["VQVAE_train"]["VQ_train_epoch"],
         "--VAETrainEpoch", config["VQVAE_train"]["VAE_train_epoch"],
     ])
-    sp = subprocess.Popen(cmd)
     sp.wait()
 
 
