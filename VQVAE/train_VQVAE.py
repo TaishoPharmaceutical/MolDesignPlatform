@@ -32,7 +32,8 @@ if __name__ == "__main__":
     batch_size = args.batch
     train_file_name = args.df
     max_epoch = args.VQTrainEpoch
-    vae_train_epoch=args.VAETrainEpoch
+    vae_train_epoch = args.VAETrainEpoch
+    os.makedirs(f"{save_path}", exist_ok=True)
 
     model = VQVAE(encode_size, hidden_size, MAX_LEN, num_embeddings=num_embeddings, commitment_cost =commitment_cost)
     if len(glob(f"{save_path}/VQVAE_decoder*")) !=0:
