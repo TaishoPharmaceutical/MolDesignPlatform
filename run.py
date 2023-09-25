@@ -43,4 +43,4 @@ if __name__=="__main__":
 
     # Run WebGUI
     webgui_api = os.path.join(root_path, "WebGUI", "WebGUI_run.py")
-    sp = subprocess.Popen()
+    sp = subprocess.Popen([python, webgui_api])
