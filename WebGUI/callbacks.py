@@ -1276,6 +1276,7 @@ def edit_chem(is_open, user_id):
     num_id = int(index.split("-")[1])
 
     smi = pred_df[col_id][pred_df[col_id]["id"]==index]["SMILES"].values[0]
+    smi = get_url_smiles([smi])
 
     #POST先URL
     mhash = hashlib.md5(smi.encode()).hexdigest()
